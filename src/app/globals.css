@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 20% 98%; /* Warm white */
+    --foreground: 150 5% 10%; /* Dark green-grey */
+
+    --card: 60 20% 98%;
+    --card-foreground: 150 5% 10%;
+
+    --popover: 60 20% 98%;
+    --popover-foreground: 150 5% 10%;
+
+    --primary: 142 70% 35%; /* Deep nature green */
+    --primary-foreground: 142 90% 95%;
+
+    --secondary: 35 30% 90%; /* Sand/Beige */
+    --secondary-foreground: 35 70% 25%;
+
+    --muted: 150 10% 94%;
+    --muted-foreground: 150 10% 40%;
+
+    --accent: 180 50% 50%; /* Water teal */
+    --accent-foreground: 180 90% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 10% 88%;
+    --input: 150 10% 88%;
+    --ring: 142 70% 30%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 150 20% 8%;
+    --foreground: 150 10% 90%;
+
+    --card: 150 20% 8%;
+    --card-foreground: 150 10% 90%;
+
+    --popover: 150 20% 8%;
+    --popover-foreground: 150 10% 90%;
+
+    --primary: 142 50% 45%;
+    --primary-foreground: 142 90% 95%;
+
+    --secondary: 35 20% 20%;
+    --secondary-foreground: 35 70% 85%;
+
+    --muted: 150 10% 15%;
+    --muted-foreground: 150 10% 60%;
+
+    --accent: 180 40% 40%;
+    --accent-foreground: 180 90% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 10% 15%;
+    --input: 150 10% 15%;
+    --ring: 142 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-500;
+  }
+}
